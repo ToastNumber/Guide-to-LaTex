@@ -1,0 +1,60 @@
+\section{General \LaTeX}
+\subsection{Structure}
+The general layout of a \LaTeX document is:
+
+\begin{tabular}{|p{8.0cm}|}
+\hline
+
+\textbackslash{}documentclass\{article\} \\
+\% Preamble with \textbackslash{}usepackage\{\ldots\} statements. \\
+\textbackslash{}begin\{document\} \\
+\textbackslash{}section\{Introduction\} \\
+\textbackslash{}subsection\{Introduction subsection\} \\
+\textbackslash{}end\{document\} \\
+
+\hline
+\end{tabular}
+
+\subsection{Spacing}
+\begin{itemize}
+\item Multiple spaces are treated as a single space.
+\item A new line is treated as a space; a blank line is treated as a new line character.
+\end{itemize}
+
+\subsection{Comments}
+\subsubsection{Single line comments}
+Single line comments can be inserted using the \% character.
+For example:
+
+\begin{tabular}{|p{8.0cm}|}
+\hline
+This is a normal line \\
+\% This is a commented line \\
+This is another normal line. \\
+\hline
+\end{tabular}
+
+\subsubsection{Long comments}
+You can enclose long comments as follows:
+
+\begin{tabular}{|p{8.0cm}|}
+\hline
+\textbackslash{}begin\{comment\} \\
+This is a long comment. \\
+\textbackslash{}end\{comment\} \\
+\hline
+\end{tabular}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

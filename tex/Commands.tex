@@ -1,0 +1,177 @@
+\section{Commands}
+%Needs fixing
+\begin{longtable}{|c|p{0.8\textwidth}|}
+\hline
+
+\textbf{Command} 	& \textbf{Description}
+\\
+\hline
+
+\verb|documentclass|		&  The argument of this command indicates the class  
+of the document. The different options are:
+
+\begin{description}
+\item[Article] for articles in scientific journals, presentations, short reports, program documentation, invitations, \ldots{}.
+
+\item[Proc] a class for proceedings based on the article class.
+
+\item[Minima] is as small as it can get. It only sets a page size and a base font. It is mainly used for debugging purposes.
+
+\item[Report] for longer reports containing several chapters, small books, PhD theses, \ldots{}
+
+\item[Book] for real books
+
+\item Slides for slides. The class uses big sans serif letters. You might want to consider using the Beamer class instead.
+\end{description}
+
+\paragraph{Options}
+
+\begin{description}
+\item[10pt, 11pt, 12pt] Sets the size of the main font in the document. 10pt by default.
+
+\item PAPER-SIZE
+	\begin{description}
+	\item[a4paper]
+	\item[a5paper]
+	\item[letterpaper]
+	\item[b5paper]
+	\item[executivepaper]
+	\item[legalpaper]
+	\end{description}
+
+\item[fleqn] Typesets displayed formulae left-aligned instead of centred.
+
+\item[leqno] Places the numbering of formulae on the left hand side instead of the right.
+
+\item[titlepage, notitlepage] Specifies whether a new page should be started after the document title or not.
+
+\item[onecolumn, twocolumn]
+
+\item[twoside, oneside]
+
+\item[landscape]
+
+\item[openright, openany] Makes chapters begin either on a right-hand page or the next page available.
+\end{description}
+
+\\
+\hline
+
+\verb|pagestyle| & The argument of this command indicates the page numbering style. \textit{plain} is the default, \textit{headings} prints the current chapter heading and the page number in the header on each page, while the footer remains empty. \textit{empty} for empty footer and header.
+
+\\
+\hline
+
+\verb|thispagestyle| & The argument of this command indicates the page numbering style for the current page.
+
+\\
+\hline
+\verb|input| & By giving this command a \LaTeX file as an argument, it will put the content of this file directly where the command is called, e.g. \textbackslash{}input\{FILENAME\}.
+
+\\
+\hline
+\verb|hline| & This inserts a horizontal line.
+
+\\
+\hline
+\verb|textbackslash| & This inserts a backslash in the document.
+
+\\
+\hline
+\verb|textbf| & Makes the argument bold.
+
+\\
+\hline
+\verb|emph| & \emph{Emphasises} the argument.
+
+\\
+\hline
+\verb|textit| & \textit{Italicises} the argument.
+
+\\
+\hline
+\verb|ldots| & Inserts \ldots
+
+\\
+\hline
+\verb|\\| & Forces a line break
+
+\\
+\hline
+\verb|newline| & Forces a line break.
+
+\\
+\hline
+\verb|newpage| & Starts a new page.
+
+\\
+\hline
+\verb|fussy| & Makes \LaTeX fussy about warnings (underfull/overfull hbox etc.)
+
+\\
+\hline
+\verb|hyphenation| & This takes a space-separated list of arguments indicating the hyphenation that can take place for new lines. 
+For example:
+
+\textbackslash{}hyphenation{FORTRAN super-cali-fra-gi-lis-tic-ex-pi-a-li-do-cious} indicates that FORTRAN should not be hyphenated across a new line, but super-cali-fra-gi-lis-tic-ex-pi-a-li-do-cious can be hyphenated at any of the specified points.
+
+\\
+\hline
+\verb|mbox| & Causes its arguments to be kept together under all circumstances, i.e. not split across lines.
+
+\\
+\hline
+\verb|fbox| & Similar to mbox, but in addition there will be a visible box drawn around the content.
+
+\\
+\hline
+\verb|today| & Gets today's date.
+
+\\
+\hline
+\verb|chapter| & Creates a new chaper with the title given as an argument. An optional argument indicates the name for the chapter in the table of contents.
+
+\\
+\hline
+\verb|frontmatter| & (For books). This should be the first command after the start of the document body. It will switch page numbering to roman numerals and sections will be non-enumerated.
+
+\\
+\hline
+\verb|mainmatter| & (For books). This comes right before the first chapter. It turns on Arabic page numbering and restarts the page counter.
+
+\\
+\hline
+\verb|label| & Creates a referencable label, with the argument specifying the name for this label.
+
+\\
+\hline
+\verb|ref| & \LaTeX replaces \textbackslash{}ref{label} by the number of the section, subsection, figure, table, or theorem after which the corresponding \textbackslash{}label command was issued.
+
+\\
+\hline
+\verb|pageref| & \LaTeX replaces \textbackslash{}pageref by the page number of the specified label.
+
+\\
+\hline
+\verb|footnote| & Inserts a footnote with the specified text.
+
+\\
+\hline
+\verb|underline| & \underline{Underlines} the argument.
+
+\\
+\hline
+\verb|flushleft| & Left-aligns the following content.
+
+\\
+\hline
+\verb|flushright| & Right-aligns the following content.
+
+\\
+\hline
+\verb|center| & Centers the following content.
+
+\\
+\hline
+\end{longtable}
+
